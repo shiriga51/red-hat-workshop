@@ -20,7 +20,7 @@ spec:
       containers:
         env:
           - name: PORT
-          value: {{ .Values.containers.containerPort | quote}}
+            value: {{ .Values.containers.containerPort | quote}}
         readinessProbe:
           httpGet:
             path: /health/readiness
