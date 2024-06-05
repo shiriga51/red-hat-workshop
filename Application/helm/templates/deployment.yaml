@@ -32,10 +32,10 @@ spec:
             successThreshold: 1
             failureThreshold: 3
           livenessProbe:
-            httpGet: /health/liveliness
-            path: /health/readiness
-            port: {{ .Values.containers.containerPort}}
-            scheme: HTTP
+            httpGet:
+              path: /health/liveliness
+              port: {{ .Values.containers.containerPort}}
+              scheme: HTTP
             initialDelaySeconds: 1
             timeoutSeconds: 1
             periodSeconds: 10
