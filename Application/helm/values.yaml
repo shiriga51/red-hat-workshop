@@ -28,4 +28,4 @@ volume:
     path: '/tmp/html'
 argocd:
   syncwave:
-     deployment: 5
+     deployment: "5"
